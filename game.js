@@ -73,7 +73,7 @@ var mainState = {
     
         // Go through all the pipes, and stop their movement
         this.pipes.forEachAlive(function(p){
-            p.body.velocity.x = 200;
+            p.body.velocity.x = -200;
         }, this);
     },
 
