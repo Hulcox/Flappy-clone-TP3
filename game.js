@@ -66,14 +66,14 @@ var mainState = {
             return;
             
         // Set the alive property of the bird to false
-        this.bird.alive = true;
+        this.bird.alive = false;
 
         // Prevent new pipes from appearing
-        //this.game.time.events.remove(this.timer);
+        this.game.time.events.remove(this.timer);
     
         // Go through all the pipes, and stop their movement
         this.pipes.forEachAlive(function(p){
-            p.body.velocity.x = -200;
+            p.body.velocity.x = 0;
         }, this);
     },
 
