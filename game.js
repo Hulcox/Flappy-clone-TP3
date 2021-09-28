@@ -69,7 +69,7 @@ var mainState = {
         this.bird.alive = true;
 
         // Prevent new pipes from appearing
-        this.game.time.events.remove(this.timer);
+        //this.game.time.events.remove(this.timer);
     
         // Go through all the pipes, and stop their movement
         this.pipes.forEachAlive(function(p){
