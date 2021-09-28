@@ -66,7 +66,7 @@ var mainState = {
             return;
             
         // Set the alive property of the bird to false
-        this.bird.alive = false;
+        this.bird.alive = true;
 
         // Prevent new pipes from appearing
         this.game.time.events.remove(this.timer);
